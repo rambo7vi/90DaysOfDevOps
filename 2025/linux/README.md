@@ -19,12 +19,11 @@ Imagine you're managing a **Linux-based production server** and need to ensure t
   - Restrict SSH login for certain users in `/etc/ssh/sshd_config`.
 
 ---
-sudo adduser devops_user
+-sudo adduser devops_user
 
-sudo groupadd devops_team
----
-sudo usermod -aG devops_team devops_user 
----
+-sudo groupadd devops_team
+-sudo usermod -aG devops_team devops_user 
+
 or 
 ---
 sudo gpasswd -a devops_user devops_team
